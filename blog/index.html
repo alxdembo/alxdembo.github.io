@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>blog — dembo.eu</title>
+<meta name="description" content="Notes on software, side projects, and things I had to look up twice.">
+<link rel="canonical" href="https://dembo.eu/blog/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0b0a14">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <svg width="22" height="16" viewBox="0 0 11 8" shape-rendering="crispEdges" aria-hidden="true" focusable="false">
+        <g fill="#4ff0e6">
+          <rect x="2" y="0" width="1" height="1"/><rect x="8" y="0" width="1" height="1"/>
+          <rect x="3" y="1" width="1" height="1"/><rect x="7" y="1" width="1" height="1"/>
+          <rect x="2" y="2" width="7" height="1"/>
+          <rect x="1" y="3" width="2" height="1"/><rect x="4" y="3" width="3" height="1"/><rect x="8" y="3" width="2" height="1"/>
+          <rect x="0" y="4" width="11" height="1"/>
+          <rect x="0" y="5" width="1" height="1"/><rect x="2" y="5" width="7" height="1"/><rect x="10" y="5" width="1" height="1"/>
+          <rect x="0" y="6" width="1" height="1"/><rect x="2" y="6" width="1" height="1"/><rect x="8" y="6" width="1" height="1"/><rect x="10" y="6" width="1" height="1"/>
+          <rect x="3" y="7" width="2" height="1"/><rect x="6" y="7" width="2" height="1"/>
+        </g>
+      </svg>
+      <span class="brand-name">dembo.eu<span class="cursor" aria-hidden="true"></span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="/blog/" aria-current="page">blog</a>
+      <a href="/apps/">apps</a>
+      <a href="/about/">about</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+
+    <h1>blog</h1>
+    <p style="color:var(--muted);max-width:60ch">
+      Notes on software, side projects, and things I had to look up twice.
+      Newest first.
+    </p>
+
+    <!--
+      ============================================================
+      TO ADD A POST:
+        1. copy blog/hello-world.html to blog/my-new-post.html
+        2. change the <title>, the date, the h1 and the body text
+        3. add one <li> to the <ul class="post-list"> below
+        4. commit + push
+      No build step, no scripts. That is the whole workflow.
+      ============================================================
+    -->
+
+    <ul class="post-list">
+      <li>
+        <a class="post-item" href="/blog/hello-world.html">
+          <span class="post-meta">2026-10-10</span>
+          <span class="post-title">Hello, world</span>
+          <p class="post-summary">Kicking the tyres on a brand new site, and why I went with plain HTML over a framework.</p>
+          <span class="tags">
+            <span class="tag tag--cyan">meta</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="post-item" href="/blog/colophon.html">
+          <span class="post-meta">2026-10-10</span>
+          <span class="post-title">Colophon</span>
+          <p class="post-summary">How this site is put together: hand-written HTML, one stylesheet, and GitHub Pages.</p>
+          <span class="tags">
+            <span class="tag tag--magenta">meta</span>
+            <span class="tag tag--green">css</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 dembo.eu</span>
+    <span><a href="https://github.com/alxdembo">github</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
